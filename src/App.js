@@ -16,7 +16,7 @@ import GifCarregando from '../src/images/carregando.gif'
 
     const filtraEtnia = etnia.length > 0 ? `&ethnicity=${etnia}` : ''
     const filtraIdade = idade.length > 0 ? `&age=${idade}` : ''
-    const filtraCabelo = cabelo.length > 0 ? `$hair_color=${cabelo}` : ''
+    const filtraCabelo = cabelo.length > 0 ? `&hair_color=${cabelo}` : ''
 
     let url = `https://api.generated.photos/api/v1/faces?api_key=${apiKey}${filtraEtnia}${filtraIdade}${filtraCabelo}&order+by=random`
 
